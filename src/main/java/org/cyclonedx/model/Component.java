@@ -82,6 +82,8 @@ public class Component extends ExtensibleElement {
         DEVICE_DRIVER("device-driver"),
         @JsonProperty("firmware")
         FIRMWARE("firmware"),
+        @JsonProperty("platform")
+        PLATFORM("platform"),
         @JsonProperty("file")
         FILE("file"),
         @JsonProperty("machine-learning-model")
