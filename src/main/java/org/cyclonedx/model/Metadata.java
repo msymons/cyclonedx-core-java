@@ -27,6 +27,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+import org.cyclonedx.util.deserializer.MetadataDeserializer;
 import org.cyclonedx.util.serializer.CustomDateSerializer;
 import org.cyclonedx.util.deserializer.LicenseDeserializer;
 import org.cyclonedx.util.LifecycleDeserializer;
@@ -44,6 +45,7 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 @JsonPropertyOrder({
     "timestamp", "lifecycles", "tools", "authors", "component", "manufacture", "supplier", "licenses", "properties"
 })
+@JsonDeserialize(using = MetadataDeserializer.class)
 public class Metadata
     extends ExtensibleElement
 {
