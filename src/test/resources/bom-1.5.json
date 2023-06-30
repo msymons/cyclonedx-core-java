@@ -254,19 +254,22 @@
           ],
           "tools": [
             {
-              "tool": "test"
+              "ref": "test"
             }
           ]
         },
         "occurrences": [
            {
+            "bom-ref": "test",
             "location": "file"
           }
         ],
         "callstack": {
           "frames": [
             {
-              "module": "test"
+              "module": "test",
+              "line": 1,
+              "column": 1
             }
           ]
         },

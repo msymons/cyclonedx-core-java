@@ -70,11 +70,11 @@ public class Frame extends ExtensibleElement
     this.line = line;
   }
 
-  public int getColumn() {
+  public Integer getColumn() {
     return column;
   }
 
-  public void setColumn(final int column) {
+  public void setColumn(final Integer column) {
     this.column = column;
   }
 
